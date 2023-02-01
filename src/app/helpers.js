@@ -1,5 +1,5 @@
 export const getDays = (createdAt) => {     //return number of days, hours, minutes or seconds from date 'createdAt' depending on input param 
-    const elpasedTime = Date.now() - createdAt;
+    const elpasedTime = Math.floor(Date.now() / 1000) - createdAt;
     const days = Math.floor(elpasedTime / 86400);
     if(days === 0)
     {
