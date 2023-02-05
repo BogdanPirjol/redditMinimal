@@ -1,0 +1,447 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: #e6e6e617;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbarColor {
+    background-color: white;
+}
+
+.noBorder {
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    font-size: larger;
+    flex-wrap: nowrap;
+    background-color: white;
+    z-index: 1;
+    margin-bottom: 15px;
+    box-shadow: 0 0 3px 0;
+    height: 50px;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 0px;
+    width: 50%;
+    
+    height: 30px;
+}
+
+.logo{
+    display: flex;
+    width: 30%;
+    align-items: center;
+}
+
+input[placeholder='Search'] {
+    padding-left: 15px;
+}
+
+.search button{
+    border: none;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.search button:hover {
+    border-radius: 5px;
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+
+
+.contentContainer {
+    display: flex;
+    column-gap: 20px;
+}
+
+.posts {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    margin-left: 15px;
+    row-gap: 15px;
+}
+
+.placeHolderContainer:hover{
+    box-shadow: 10px 10px 5px rgba(219,219, 219, 1);
+
+}
+
+.posts p {
+    background-color: white;
+}
+
+.subreddits {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+}
+
+h2 {
+    background-color: white;
+    padding: 10px;
+}
+
+.subreddits .banner {
+    display: flex;
+    background-color: white;
+    margin: 0;
+    margin-left: 20px;
+    padding: 15px 10px 15px 10px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.banner {
+    border-left: 5px solid transparent;
+}
+
+.subreddits .banner h3 {
+    font-weight:bolder;
+    color: grey;
+    font-size: smaller;
+}
+
+.subreddits .banner img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 360px;
+}
+
+
+.blank {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 360px;
+    margin-right: 10px;
+}
+
+.banner:hover {
+    background-color: rgba(51, 134, 243,0.4);
+    border-left: 5px solid rgb(51, 134, 243);
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.active {
+    background-color: rgba(51, 134, 243,0.4) !important;
+    border-left: 5px solid rgb(51, 134, 243);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.searchArea {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 30px;
+    box-sizing: border-box;
+    align-items: flex-start;
+    border-radius: 5px;
+}
+
+.searchField{
+    min-height: 30px;
+    width: 100%;
+}
+
+.suggestion{
+    width: 100%;
+    z-index: 1;
+}
+
+.suggestion p {
+    padding: 5px;
+    background-color: white;
+}
+
+.placeHolderContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: white;
+}
+
+.title {
+    padding: 5px;
+    width: 25%;
+    min-height: 5%;
+    border-radius: 3px;
+    background-color: #dbdbdb75;
+}
+
+.mediaContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    column-gap: 10px;
+}
+
+.moreInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #dbdbdb75;
+    height: 15px;
+    border-radius: 3px;
+}
+
+.reactions {
+    display: flex;
+    width: 5%;
+    align-self: center;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3px;
+    flex-direction: column;
+}
+
+.images {
+    width: 100%;
+    background-color: white;
+    border-radius: 3px; 
+}
+
+.fadeEffect {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(219,219, 219, 1) 10%);
+}
+
+
+.reactions button {
+    display: flex;
+    border:none;
+    background-color: white;
+}
+
+.placeHolderContainer p{
+    height: 20px;
+    width: 20px;
+    background-color: rgba(219,219, 219, 1);
+}
+
+.reactions button:hover{
+    background-color: rgba(219,219, 219, 1);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.reactions button:hover svg {
+    background-color: rgba(219,219, 219, 1);
+}
+
+.reactions button{
+    color: rgba(219,219, 219, 0.8);
+}
+
+.up:hover {
+    color: rgb(47, 255, 47);
+}
+
+.down:hover{
+    color: red;
+}
+
+.contentTitle {
+    font-size: xx-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contentInfos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid rgba(219,219, 219, 0.8);
+}
+
+.contentAuthor{
+    color:rgb(51, 134, 243)
+}
+
+.date {
+    font-style: italic;
+    font-size: smaller;
+}
+
+
+#wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 6%;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.commentsIcon {
+    padding: 3px;
+}
+
+#wrap .commentsIcon:hover{
+    fill: rgb(47, 255, 47);
+    cursor: pointer;
+    background-color: rgba(219,219, 219, 0.8);
+    border-radius: 3px;
+}
+
+img {
+    width: inherit;
+    height: inherit;
+}
+
+svg {
+    background-color: white;
+}
+
+.commentsPlaceholderContainer {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+    background-color: grey;
+}
+
+.commentContainer {
+    background-color: rgba(219, 219, 219, 0.151);
+    margin-bottom: 15px;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.commentsInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding-bottom: 5px;
+}
+
+.commentAuthor {
+    background-color: inherit !important;
+    margin-right: 10px;
+    color:rgb(51, 134, 243);
+}
+
+.commentDate {
+    background-color: inherit !important;
+    font-size: smaller;
+    font-style: oblique;
+}
+
+
+.commentData p{
+    background-color: inherit !important;
+}
+
+#contentComments {
+    background-color: white;
+}
+
+.commentContainer:hover{
+    box-shadow: 5px 7px rgba(219, 219, 219, 0.8);
+    cursor: pointer;
+}
+
+.burgerMenu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid rgb(165, 165, 165);
+    color: rgb(165, 165, 165);
+    background-color: white;
+    display: none;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 500px) {
+    .burgerMenu {
+        display: block;
+        z-index: 1;
+    }
+
+    .burgerMenu:hover{
+        background-color: rgba(219, 219, 219, 0.8);
+        cursor: pointer;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .subreddits {
+        display: none;
+    }
+
+    .posts {
+        width: 100%;
+    }
+}
+
+.responsive {
+    width: 0%;
+    overflow-y: scroll;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    cursor: pointer;
+    transition-property: width;
+    transition-duration: 1s;
+}
+
+.responsiveActive {
+    width: 100%;
+}
+
+.tfiClose {
+    border: 1px solid black;
+    border-radius: 2px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 2;
+}
+
+.tfiClose:hover {
+    background-color: rgba(219,219, 219, 0.8) !important;
+    cursor: pointer;
+}
