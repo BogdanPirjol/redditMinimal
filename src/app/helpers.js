@@ -10,21 +10,21 @@ export const getDays = (createdAt) => {     //return number of days, hours, minu
             {
                 return ({
                     units: elpasedTime,
-                    type: 'seconds'
+                    type: Math.floor(elpasedTime) <= 1 ? 'second' : 'seconds'
                 });
             }
             return ({
                 units: minutes,
-                type: 'minutes'
+                type: Math.floor(minutes) <= 1 ? 'minute' : 'minutes'
             })
         }
         return ({
             units: hours,
-            type: 'hours'
+            type: Math.floor(hours) <= 1 ? 'hour' : 'hours'
         })
     }
     return ({
         units: days,
-        type: 'days'
+        type: Math.floor(days) <= 1 ? 'day' : 'days'
     })
 }
